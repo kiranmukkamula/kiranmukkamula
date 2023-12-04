@@ -1,0 +1,103 @@
+body{
+    font-family: 'poppins',sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-black);
+    margin: 0;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(300deg,rgba(0, 0, 0, 0),rgba(0, 0, 0,0)) ,url(https://img.freepik.com/premium-vector/we-want-your-feedback-icon-flat-style-survey-banner-vector-illustration-isolated-background-speech-bubble-sign-business-concept_157943-19648.jpg);
+    background-size:1000px;
+    background-repeat: no-repeat;
+    background-position: left-top;
+}
+
+
+input,button,select,textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.container{
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    padding:1.8rem 1rem;
+}
+
+header{
+text-align: center;
+}
+
+form{
+    background: var(--color-darkblue-alpha);
+    border-radius: 0.25rem;
+}
+
+
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+.formControl{
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #0b0d0f;
+    background-color: 6#fbf5f5;
+    background-clip: padding-box;
+    border: 1px solid #25fa37;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+.formControl:focus{
+    border-color:rgb(18, 228, 92);
+    outline: 0;
+    box-shadow:0 0 0 0.2rem rgba(0, 255, 30, 0.25)
+}
+
+
+
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:800px){
+    .container{
+        max-width:760px;
+}
+}
+.back-link {
+    color: lightgreen;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 2px solid lightgreen;
+    padding: 10px 66px;
+    border-radius: 9px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+    background: green;
+    color: #fff;
+}

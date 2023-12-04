@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="welcome.css">
+
+       
+    
+ </head>
+
+    <title>Survey Form</title>
+   
+
+<body>
+    
+    <img src="logo.png" class="logo" style="width: 310px; height: 190px;position: fixed;">
+    <div class="container">
+        <header class="header">
+            <h1 style="text-align: center; font-size: 40px;color: lightsalmon;">Welcome!</h1>
+            <h1 id="title" style="color: green;">
+                Survey and Feedback
+            </h1>
+            <h2 id="description">
+                Login to Start
+            </h2>
+        </header>
+        <form action="" id="survey-form">
+            
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your Name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of Number section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address"
+            <!-- end of select section -->
+            </div>
+        
+          
+        </form>
+    </div>
+
+<div>
+<a href="index.html" class="back-link" style="margin-left: 700px;">Login</a>
+</div>
+</body>
+</html>
